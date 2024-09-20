@@ -195,3 +195,42 @@ footer p {
         width: 90%;
     }
 }
+
+/* used for the mobile, to hide the nav menu with hamburger icon */
+
+/* Show the Hamburger Icon on Smaller Screens */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show the hamburger icon on smaller screens */
+    }
+    
+    nav ul {
+        display: none; /* Hide the navigation menu by default on smaller screens */
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* sets the nav menu to appear or not */
+nav ul {
+    display: none;
+}
+
+nav ul.show-menu {
+    display: block;
+}
+
+/* appearance for show menu button defaults */
+
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-toggle img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
